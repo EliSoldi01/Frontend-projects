@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.toggle-btn {
+    position: relative;
+    height: 155px;
+    width: 300px;
+    background-color: #ddd;
+
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.toggle-btn.active {
+    background: aqua;
+}
+
+.toggle-btn .icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 120px;
+
+    font-size: 70px;
+    color: #999;
+
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s ease;
+}
+
+.toggle-btn.active .icon {
+    left: calc(100% - 120px - 20px);
+    color: rgb(58, 171, 171);
+    
+}

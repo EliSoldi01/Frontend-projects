@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.toggle-btn {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    background-color: rgb(62, 184, 224);
+
+    border-radius: 100px;
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+.toggle-btn.active {
+    background-color: rgb(12, 40, 72);
+}
+
+.toggle-btn .button-sun {
+    position: relative;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    box-shadow: -2px -2px 5px rgb(195, 174, 15) inset;
+    background-color: rgb(243, 215, 0);
+
+    transition: all 0.4s ease;
+}
+
+.toggle-btn.active .button-moon {
+    position: relative;
+    top: 50%;
+    left: calc(100% - 140px);
+    transform: translateY(-50%);
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    box-shadow: 2px -2px 2px rgb(104, 104, 104) inset;
+    background-color: rgb(211, 211, 211);
+
+    transition: all 0.4s ease;
+}
+
+.toggle-btn .bxs-cloud {
+    color: white;
+    text-shadow: 2px 2px 2px #606060;
+}
+
+.first {
+    position: relative;
+    top: 5px;
+    left: 180px;
+
+    font-size: 60px;
+}
+
+.second {
+    position: relative;
+    top: 5px;
+    left: 130px;
+
+    font-size: 60px;
+}
+
+.moon-decor {
+    display: flex;
+}
+
+.toggle-btn .moon-decor .circle{
+    visibility: hidden;
+}
+
+.toggle-btn.active .moon-decor .circle {
+    visibility: visible;
+    transition: 0.4s;
+    border-radius: 50%;
+    background-color: rgb(104, 104, 104);
+}
+
+.one {
+    position: absolute;
+    top: 55px;
+    right: 85px;
+    width:  40px;
+    height: 40px;
+}
+
+.two {
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    width:  7px;
+    height: 7px;
+}
+
+.three {
+    position: absolute;
+    top: 85px;
+    right: 60px;
+    width:  15px;
+    height: 15px;
+}
+
+

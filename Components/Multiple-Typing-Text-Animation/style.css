@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .text {
+    position: relative;
+    color: rgb(171, 128, 249);
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.container .text.static {
+    color: white;
+}
+
+.text.dynamic:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: black;
+    color: rgb(171, 128, 249);
+    border-left: solid 2px rgb(171, 128, 249);
+    animation: typing 4s steps(19) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }  
+}
+
