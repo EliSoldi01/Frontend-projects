@@ -18,11 +18,11 @@
     color: rgb(171, 128, 249);
     font-size: 40px;
     font-weight: 600;
-    margin-right: 10px;
 }
 
 .container .text.static {
     color: white;
+    margin-right: 10px;
 }
 
 .text.dynamic:before {
